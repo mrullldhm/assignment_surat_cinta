@@ -21,8 +21,25 @@
             height: 400px;
             background-color: #ffffff;
             padding: 50px;
-            margin: 0 auto; /* Box will be at the center of the display */
+            margin: 0 auto; /* Box will be at the center of the display with no margin */
+            position: relative;
+            animation: letter 3s 1; /* animation rule 3s duration 1 time */
             }
+
+        @keyframes letter {
+            0% {
+                color: #ffffff;
+                margin-bottom: 150px;
+                }
+            30% {
+                letter-spacing: 25px;
+                margin-bottom: 75px;
+                }
+            85% {
+                letter-spacing:8 px;
+                margin-bottom: 10px;
+                }
+            }            
         footer p {
             color: #ffffff;
             font-size: 1em;
@@ -47,8 +64,8 @@
         </p>
         </strong>
     </section>
-    <footer> <!-- Copyright -->
-        <p>&copy; 2024 Amirul Adham. All rights reserved.</p>
+    <footer> 
+        <p>&copy; 2024 Amirul Adham. All rights reserved.</p> <!-- Copyright -->
     </footer>
 </body>
 
