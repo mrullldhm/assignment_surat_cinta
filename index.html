@@ -2,71 +2,85 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Letter</title>
     <style>
-        *{box-sizing: border-box;}
+        /* Reset and box-sizing for all elements */
+        * {box-sizing: border-box;}
+
+        /* Body Styles */
         body {
-            background-color: #640019;
-            text-align: center;
-            margin: 0 auto;
-            padding: 0;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
+            background-color: #640019; /* Deep red background for the entire page */
+            text-align: center; /* Center all text */
+            margin: 0 auto; /* Center the body */
+            padding: 0; /* Remove padding */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family for the text */
+        }
+
+        /* Header Styles */
         header {
-            font-size: 3em;
-            color: rgb(255, 255, 255);
-            }
+            font-size: 3em; /* Large font size for the header */
+            color: rgb(255, 255, 255); /* White text color for the header */
+        }
 
+        /* Section Styles */
         section {
-            width: 75%;
-            margin: auto;
-            background-color: white;
-            }
+            width: 75%; /* Section takes 75% of the page width */
+            margin: auto; /* Center the section */
+            background-color: white; /* White background for the section */
+        }
 
+        /* Article Styles */
         article {
-            padding: 50px;
-            margin: 0 auto; /* Box will be at the center of the display with no margin */
-            animation: letter 2.5s 1; /* animation rule 3s duration 1 time */
-            }
-            
-            @keyframes letter {
+            padding: 50px; /* Padding inside the article */
+            margin: 0 auto; /* Center the article with no margin */
+            animation: letter 2.5s 1; /* Apply a one-time animation to the article over 2.5 seconds */
+        }
+        
+        /* Keyframes for the letter animation */
+        @keyframes letter {
             0% {
-                color: #640019;
-                margin-bottom: 150px;
-                background-color: #640019;
-                }
-            30% {
-                letter-spacing: 25px;
-                margin-bottom: 75px;
-                background-color: #640019;
-                }
-            85% {
-                letter-spacing:8 px;
-                margin-bottom: 10px;
-                background-color: #640019;
-                }
-            }            
-        footer p {
-            color: #ffffff;
-            font-size: 1em;
-            letter-spacing: 1px;
+                color: #640019; /* Initial color of the text matches the background */
+                margin-bottom: 150px; /* Start with a large bottom margin */
+                background-color: #640019; /* Initial background color matches the page background */
             }
+            30% {
+                letter-spacing: 25px; /* Increase letter spacing */
+                margin-bottom: 75px; /* Reduce bottom margin */
+                background-color: #640019; /* Keep background color consistent */
+            }
+            85% {
+                letter-spacing: 8px; /* Decrease letter spacing */
+                margin-bottom: 10px; /* Almost normal bottom margin */
+                background-color: #640019; /* Keep background color consistent */
+            }
+        }
+
+        /* Footer Styles */
+        footer p {
+            color: #ffffff; /* White text color for the footer */
+            font-size: 1em; /* Standard font size */
+            letter-spacing: 1px; /* Slightly increased letter spacing */
+        }
     </style>
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
         <h1>My Love</h1> <!-- The title of the letter -->
     </header>
+    
+    <!-- Main Content Section -->
     <section> <!-- Content of the letter -->
         <article>
         <strong>
         <p>
             Your love gives me strength and hope <br> <br>
             Thank you for being you <br> <br>
-            In the moments when I feel lost, you love is the compass that guides me back to myself <br> <br>
+            In the moments when I feel lost, your love is the compass that guides me back to myself <br> <br>
             Your faith in me has given me the courage to face my fears and the determination to chase my dreams <br> <br>
             I hope you know just how much you are loved and appreciated <br> <br>
             You are a beacon of light in my life, and I am forever grateful for you
@@ -74,6 +88,8 @@
         </strong>
         </article>
     </section>
+    
+    <!-- Footer Section -->
     <footer> 
         <p>&copy; 2024 Amirul Adham. All rights reserved.</p> <!-- Copyright -->
     </footer>
