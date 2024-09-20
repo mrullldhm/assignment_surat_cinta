@@ -1,0 +1,61 @@
+/* Global styles for body */
+body {
+    color: #44697e;            /* Sets the primary text color */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Sets the font family */
+    margin: 0;                 /* Removes default margin */
+    padding: 0;                /* Removes default padding */
+    line-height: 1.6;          /* Improves readability with better line spacing */
+}
+
+/* Header styling */
+header {
+    text-align: center;        /* Center-aligns text in the header */
+    margin: 10px auto;         /* Adds margin on the top and bottom */
+    font-size: 2rem;           /* Increases font size */
+    letter-spacing: 1rem;      /* Adds spacing between letters */
+}
+
+/* Container for the image slider */
+.image_box {
+    height: 100%;              /* Full height of container */
+    width: 100%;               /* Full width of container */
+    display: flex;             /* Flexbox layout for easy alignment */
+    margin: 0 auto;            /* Centers container horizontally */
+    box-sizing: border-box;    /* Includes padding and border in element’s width/height */
+    padding: 0 2rem;           /* Padding only on the left and right */
+}
+
+/* Individual image figure styling */
+.image {
+    margin: 0;                 /* Removes default margin */
+    flex-grow: 1;              /* Allows the image to grow and fill available space */
+    flex-basis: 0;             /* No base width for the image, let it grow */
+    transition: 1s;            /* Smooth transition on hover */
+}
+
+/* Styling for images inside figure */
+.image img {
+    height: 50vh;              /* Image height is 50% of viewport height */
+    width: 100%;               /* Full width image */
+    object-fit: cover;         /* Image covers container, potentially cropping */
+}
+
+/* Hover effect for zooming into image */
+.image:hover {
+    flex-basis: 50%;           /* Increases image width on hover */
+    transform: scale(1.0);     /* Scales the image slightly for effect */
+}
+
+/* Styling for the letter section */
+#letter {
+    text-align: center;        /* Center-aligns text in letter */
+    padding: 1rem 5rem;           /* Adds padding to the sides */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;        /* Centers text in footer */
+    margin: 0 auto;            /* Centers footer content */
+    letter-spacing: 0.2rem;    /* Adds slight letter spacing */
+    font-size: 0.75rem;        /* Small font size */
+}

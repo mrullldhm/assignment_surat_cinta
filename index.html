@@ -2,97 +2,81 @@
 <html lang="en">
 
 <head>
-    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Letter</title>
-    <style>
-        /* Reset and box-sizing for all elements */
-        * {box-sizing: border-box;}
-
-        /* Body Styles */
-        body {
-            background-color: #640019; /* Deep red background for the entire page */
-            text-align: center; /* Center all text */
-            margin: 0 auto; /* Center the body */
-            padding: 0; /* Remove padding */
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family for the text */
-        }
-
-        /* Header Styles */
-        header {
-            font-size: 3em; /* Large font size for the header */
-            color: rgb(255, 255, 255); /* White text color for the header */
-        }
-
-        /* Section Styles */
-        section {
-            width: 75%; /* Section takes 75% of the page width */
-            margin: auto; /* Center the section */
-            background-color: white; /* White background for the section */
-        }
-
-        /* Article Styles */
-        article {
-            padding: 50px; /* Padding inside the article */
-            margin: 0 auto; /* Center the article with no margin */
-            animation: letter 2.5s 1; /* Apply a one-time animation to the article over 2.5 seconds */
-        }
-        
-        /* Keyframes for the letter animation */
-        @keyframes letter {
-            0% {
-                color: #640019; /* Initial color of the text matches the background */
-                margin-bottom: 150px; /* Start with a large bottom margin */
-                background-color: #640019; /* Initial background color matches the page background */
-            }
-            30% {
-                letter-spacing: 25px; /* Increase letter spacing */
-                margin-bottom: 75px; /* Reduce bottom margin */
-                background-color: #640019; /* Keep background color consistent */
-            }
-            85% {
-                letter-spacing: 8px; /* Decrease letter spacing */
-                margin-bottom: 10px; /* Almost normal bottom margin */
-                background-color: #640019; /* Keep background color consistent */
-            }
-        }
-
-        /* Footer Styles */
-        footer p {
-            color: #ffffff; /* White text color for the footer */
-            font-size: 1em; /* Standard font size */
-            letter-spacing: 1px; /* Slightly increased letter spacing */
-        }
-    </style>
+    <title>Animated Image Slider</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>My Love</h1> <!-- The title of the letter -->
-    </header>
-    
-    <!-- Main Content Section -->
-    <section> <!-- Content of the letter -->
-        <article>
-        <strong>
-        <p>
-            Your love gives me strength and hope <br> <br>
-            Thank you for being you <br> <br>
-            In the moments when I feel lost, your love is the compass that guides me back to myself <br> <br>
-            Your faith in me has given me the courage to face my fears and the determination to chase my dreams <br> <br>
-            I hope you know just how much you are loved and appreciated <br> <br>
-            You are a beacon of light in my life, and I am forever grateful for you
-        </p>
-        </strong>
+    <!-- Header with date -->
+    <header>MARCH 02, 2024</header>
+
+    <!-- Main section wrapping all content except footer -->
+    <main>
+        <!-- Image slider section -->
+        <section class="image_box" aria-label="Image Slider">
+            <!-- Use figure to group images for better semantics -->
+            <figure class="image">
+                <img src="image/6.jpg" alt="Image 6"> <!-- Add alt text for accessibility -->
+            </figure>
+
+            <figure class="image">
+                <img src="image/5.jpg" alt="Image 5">
+            </figure>
+
+            <figure class="image">
+                <img src="image/4.jpg" alt="Image 4">
+            </figure>
+
+            <figure class="image">
+                <img src="image/1.jpg" alt="Image 1">
+            </figure>
+
+            <figure class="image">
+                <img src="image/9.jpg" alt="Image 9">
+            </figure>
+
+            <figure class="image">
+                <img src="image/10.jpg" alt="Image 10">
+            </figure>
+
+            <figure class="image">
+                <img src="image/11.jpg" alt="Image 11">
+            </figure>
+        </section>
+
+        <!-- Article section for the letter content -->
+        <article id="letter">
+            <!-- Grouping letter content into multiple paragraphs for readability -->
+            <p>
+                As I sit down to write this letter, I can't help but smile, thinking about the incredible journey we've shared. From the moment you first introduced yourself to me in September 2018, my life has never been the same. I still remember the surprise and joy I felt when you reached out to me—little did I know that this would be the beginning of something so beautiful and life-changing.
+            </p>
+
+            <p>
+                For the past five years, you've been my rock, my confidant, and my greatest love. Your affection, loyalty, and trust have been the pillars of our relationship. You've shown me what it means to be truly cared for, and your unwavering belief in me has been a source of strength through every challenge we've faced together.
+            </p>
+
+            <p>
+                I love the way you're always there, with your warm hugs and that infectious smile, reminding me that I'm never alone. You're so adorable, with your little quirks and how much you love to eat—it's just one of the many things that make you so uniquely you. But what I cherish most is your devotion. Even in moments when I doubted myself, you never wavered in your faith in us, and for that, I am eternally grateful.
+            </p>
+
+            <p>
+                As we step into this new chapter of our lives as husband and wife, I want you to know that my love for you has only grown stronger with each passing day. Marrying you in March 2024 was the happiest day of my life, and I can't wait to continue building our future together, hand in hand.
+            </p>
+
+            <p>
+                Thank you for choosing me, for loving me, and for being the wonderful person that you are. I am so incredibly blessed to have you by my side, and I promise to love and cherish you, just as you have always done for me.
+            </p>
         </article>
-    </section>
-    
-    <!-- Footer Section -->
-    <footer> 
-        <p>&copy; 2024 Amirul Adham. All rights reserved.</p> <!-- Copyright -->
+    </main>
+
+    <!-- Footer with contact details -->
+    <footer>
+        <p>Phone: +60 13-294 3132 | Email: mrullldhm94@gmail.com</p>
+        <p>&copy; 2024 Amirul Adham. All rights reserved.</p> <!-- Ensure correct use of copyright symbol -->
     </footer>
+
 </body>
 
 </html>
